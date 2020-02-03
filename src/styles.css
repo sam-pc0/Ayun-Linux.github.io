@@ -1,0 +1,24 @@
+/* GLOBAL  */
+:root{
+	--bg-primary    : #E7EBFF;
+	--bg-secondary  : #2A366F;
+	--font-primary  : "Comfortaa";
+	--font-secondary: "FreeMono";
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+}
+
+/* Classes  */
+.app{
+	height: 100vh;
+	font-family: var(--font-primary);
+	background-color: var(--bg-primary);
+}
