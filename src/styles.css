@@ -1,7 +1,7 @@
 /* GLOBAL  */
 :root{
-	--bg-primary    : #E7EBFF;
-	--bg-secondary  : #2A366F;
+	--color-primary    : #E7EBFF;
+	--color-secondary  : #2A366F;
 	--font-primary  : "Comfortaa";
 	--font-secondary: "FreeMono";
 }
@@ -18,7 +18,36 @@ body {
 
 /* Classes  */
 .app{
-	height: 100vh;
+	min-height: 100vh;
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
 	font-family: var(--font-primary);
-	background-color: var(--bg-primary);
+}
+
+.section{
+	height: 90vh;
+}
+
+.navigation{
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+	height: 2.7em;
+}
+
+.header{
+
+}
+
+.features{
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
+}
+
+.join{
+
+}
+
+.philosophy{
+	background-color: var(--color-secondary);
+	color: var(--color-primary);
 }
