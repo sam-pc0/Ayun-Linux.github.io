@@ -4,6 +4,7 @@
 	--color-secondary  : #2A366F;
 	--font-primary  : "Comfortaa";
 	--font-secondary: "FreeMono";
+	--color-navbar-foreground: #484C5B;
 }
 
 *,
@@ -14,6 +15,7 @@
 
 body {
 	margin: 0;
+	background-color: var(--color-primary);
 }
 
 /* Classes  */
@@ -25,13 +27,48 @@ body {
 }
 
 .section{
-	height: 90vh;
+	position: relative;
 }
 
+.section-blue{
+	padding-top: 5em;
+}
+
+.content{
+	max-width: 1400px;
+	height: 60vh;
+	margin: auto;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.content-blue{
+	height: 110vh;
+}
 .navigation{
-	background-color: var(--color-secondary);
+	display: flex;
+	background-color: var(--color-navbar-foreground);
 	color: var(--color-primary);
 	height: 2.7em;
+}
+
+.navigation__left,
+.navigation__right{
+	display: flex;
+	align-items: center;
+	padding: 1em;
+}
+
+.navigation__left{
+	flex-basis: 70%;
+	background-color: var(--color-secondary);
+	border-top-right-radius: 19px;
+	border-bottom-right-radius: 19px;
+}
+
+.navigation__right{
+	flex-basis: 30%;
+	background-color: #484C5B;
 }
 
 .header{
