@@ -12,6 +12,14 @@ class AssetsImport{
 		return text;
 	}
 
+	async loadLogos(){
+		const logo = await this.assetImport("./assets/svg/logo.svg");
+		const headerLogo = headerSection.getElementsByClassName("header__logo")[0];
+		let html = headerLogo.innerHTML;
+		headerLogo.innerHTML = logo + html;
+		return true;
+	}
+
 	async loadCurves(){
 		const blueSections = [...document.getElementsByClassName("section-blue")];
 		const mainCurve    = await this.assetImport("./assets/svg/main-curve.svg");
@@ -23,22 +31,14 @@ class AssetsImport{
 			section.innerHTML += bottomCurve;
 		});
 
-		return true
-	}
-
-	async loadLogo(){
-
+		return true;
 	}
 
 	async assetsLoad(){
 		this.loadCurves();
-		const logo = await this.assetImport("./assets/svg/logo.svg");
-		const headerLogo = headerSection.getElementsByClassName("header__logo")[0];
-		let html = headerLogo.innerHTML;
-		headerLogo.innerHTML = logo + html;
+		this.loadLogos();
 	}
 }
-
 
 
 // functions
