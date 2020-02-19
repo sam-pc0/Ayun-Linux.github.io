@@ -1,0 +1,11 @@
+{
+	"en":{
+		"nav": "Make for you",
+		"headerSection": ["Make for you", "Go to last release"]
+
+	},
+	"es": {
+		"nav": "Make for you",
+		"headerSection": ["Hecho para ti", "Ir al último release"]
+	}
+}

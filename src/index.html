@@ -11,18 +11,23 @@
 	<div class="app" id="app">
 		<nav class="navigation" id="navigation">
 			<div class="navigation__left">navleft</div>
-			<div class="navigation__right">navright</div>
+			<div class="navigation__right">
+				<select class="lang-select" id="langSelect" >
+					<option class="lang-select__option" value="en">English</option>	
+					<option class="lang-select__option" value="es">Español</option>	
+				</select>
+			</div>
 		</nav>
 		<header class="header section" id="header">
 			<div class="header__content content">
 				<div class="header__logo" >
    				<!--the logo is dynamically imported  -->
 					<span class="logo__distroname">Ayün Linux</span>
-					<span class="logo__slogan">Hecho para ti</span>
+					<span lang class="logo__slogan"><!-- tex inserted dinamically--> </span>
 				</div>
 				<div class="header__workflow">
 					<img class="workflow__img" src="./assets/img/workflow.jpg" alt="Ayün workflow">
-					<button class="button button-cta" id="cta">Ir al último release</button>
+					<button lang class="button button-cta" id="cta"><!-- tex inserted dinamically--></button>
 				</div>
 			</div>
 		</header>

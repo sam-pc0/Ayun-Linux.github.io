@@ -5,7 +5,7 @@
 	--font-primary            : "Comfortaa";
 	--font-secondary          : "FreeMono";
 	--color-navbar-foreground : #484C5B;
-	--responsive-breakpoint   : 700px;
+	--growth-factor-hover     : 1.05;
 }
 
 *,
@@ -26,7 +26,11 @@ button{
 	color: var(--color-primary);
 	padding: 0.8em;
 	border: none;
+	transition: transform 0.5s ease;
+
 }
+
+button:hover{transform: scale(var(--growth-factor-hover),var(--growth-factor-hover))}
 
 /* Classes  */
 .app{
@@ -89,6 +93,22 @@ button{
 	flex-basis: 30%;
 	background-color: #484C5B;
 }
+
+.lang-select{
+  padding: 0.15em;
+	background-color: var(--color-navbar-foreground);
+	color: var(--secondary-color); 
+	border: none;
+	outline: none;
+	cursor: pointer;
+	transition: transform 0.5s ease;
+	border-radius: 14px;
+  box-shadow: 0 10px 18px 1px hsla(0,100%,0%,0.2);
+}
+
+.lang-select:hover{ transform: scale(var(--growth-factor-hover),var(--growth-factor-hover)); }
+
+.lang-select__option { background-color: #595E70; }
 
 .header{
 	padding: 1.5em;
