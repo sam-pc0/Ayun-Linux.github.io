@@ -1,11 +1,22 @@
 {
 	"en":{
-		"nav": "Make for you",
-		"headerSection": ["Make for you", "Go to last release"]
+		 "nav": "Make for you"
+		,"headerSection": ["Make for you", "Go to last release"]
+    ,"featuresSection":[
+												 "Contamos con los repositorios oficiales de Arch Linux (incluído el AUR) y un modelo de desarrollo continuo para mantenerte súper actualizado."
+												,"Logramos un sistema operativo funcional y estéticamente atractivo gracias al gestor de ventanas Awesome"
+												,"El código abierto y las licencias libres refuerzan nuestra filosofía y nos aportan transparencia y solidez"
+											]
 
 	},
+
 	"es": {
-		"nav": "Make for you",
-		"headerSection": ["Hecho para ti", "Ir al último release"]
+		 "nav": "Make for you"
+		,"headerSection": ["Hecho para ti", "Ir al último release"]
+		,"featuresSection":[
+												 "Contamos con los repositorios oficiales de Arch Linux (incluído el AUR) y un modelo de desarrollo continuo para mantenerte súper actualizado."
+												,"Logramos un sistema operativo funcional y estéticamente atractivo gracias al gestor de ventanas Awesome"
+												,"El código abierto y las licencias libres refuerzan nuestra filosofía y nos aportan transparencia y solidez"
+											]
 	}
 }

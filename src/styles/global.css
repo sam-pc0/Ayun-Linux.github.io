@@ -1,0 +1,40 @@
+:root{
+	--color-primary           : #E7EBFF;
+	--color-secondary         : #2A366F;
+	--font-primary            : "Comfortaa";
+	--font-secondary          : "FreeMono";
+	--color-navbar-foreground : #484C5B;
+	--growth-factor-hover     : 1.05;
+}
+
+*,
+*::before,
+*::after{
+	box-sizing: border-box;
+	font-family: var(--font-primary);
+}
+
+body {
+	margin: 0;
+	background-color: var(--color-primary);
+}
+
+button{
+	border-radius: 14px;
+	background-image: linear-gradient(to right top, var(--color-secondary), #4766A4);
+	color: var(--color-primary);
+	padding: 1em;
+	border: none;
+	transition: transform 0.5s ease;
+	font-size: 0.8em
+}
+
+button:hover{
+  transform: scale(var(--growth-factor-hover),var(--growth-factor-hover))
+}
+
+.app{
+	min-height: 100vh;
+	background-color: var(--color-primary);
+	color: var(--color-secondary);
+}

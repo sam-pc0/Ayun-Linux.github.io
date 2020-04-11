@@ -3,8 +3,11 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" href="./styles.css">
-	<link rel="stylesheet" href="./assets/fonts/fonts.css">
+	<link rel="stylesheet" href="/assets/fonts/fonts.css">
+	<link rel="stylesheet" href="./styles/global.css">
+	<link rel="stylesheet" href="./styles/mobile.css">
+	<link rel="stylesheet" href="./styles/desktop.css" media="screen and (min-width: 700px)">
+	<base href="/">
 	<title>Ayün Linux</title>
 </head>
 <body>
@@ -18,22 +21,33 @@
 				</select>
 			</div>
 		</nav>
-		<header class="header section" id="header">
+		<header class="header" id="header">
 			<div class="header__content content">
 				<div class="header__logo" >
-   				<!--the logo is dynamically imported  -->
+					<img class="logo__image"  src="./assets/svg/logo.svg" alt="ayun logo">
 					<span class="logo__distroname">Ayün Linux</span>
-					<span lang class="logo__slogan"><!-- tex inserted dinamically--> </span>
+					<span lang class="logo__slogan"><!-- text inserted dinamically--> </span>
 				</div>
 				<div class="header__workflow">
 					<img class="workflow__img" src="./assets/img/workflow.jpg" alt="Ayün workflow">
-					<button lang class="button button-cta" id="cta"><!-- tex inserted dinamically--></button>
+					<button lang class="button button-cta" id="cta"><!-- text inserted dinamically--></button>
 				</div>
 			</div>
 		</header>
 		<section class="features section section-blue" id="features">
 			<div class="content content-blue">
-				features	
+				<div class="feature">
+					<img class="feature__img" src="./assets/svg/arch.svg" alt="archlinux logo">
+					 <p lang class="feature__text"><!-- text inserted dinamically--></p>
+				</div>
+				<div class="feature">
+					<img class="feature__img" src="./assets/svg/awesome.svg" alt="awesomeWM logo">
+					<p lang class="feature__text"><!-- text inserted dinamically--></p>
+				</div>
+				<div class="feature">
+					<img class="feature__img" src="./assets/svg/copyleft.svg" alt="copyleft logo">
+					<p class="feature__text" lang><!-- text inserted dinamically--></p>
+				</div>
 			</div>
 		</section>
 		<section class="join section" id="join">

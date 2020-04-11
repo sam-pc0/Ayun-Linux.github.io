@@ -2,10 +2,9 @@
 const app = document.getElementById("app");
 const langSelect = document.getElementById("langSelect");
 const headerSection = document.getElementById("header");
-
+const featuresSection = document.getElementById("features");
 
 // classes
-
 class LangControl{
 
 	CurrentLang = navigator.language.includes("es") ? "es" : "en";
@@ -18,7 +17,8 @@ class LangControl{
 			});
 
 		}else{
-			console.error("Elements overridas in lang change");
+			console.error("Elements override in lang change");
+			console.error(`${texts.length}--${elements.length}`)
 		}
 	}
 
@@ -26,6 +26,7 @@ class LangControl{
 		this.CurrentLang = lang;
     let importedLang = JSON.parse(await importResource("./language.json"))[lang];
 		this.changeSectionLang(importedLang["headerSection"], headerSection);
+		this.changeSectionLang(importedLang["featuresSection"], featuresSection);
 	}
 
   async	startControl(){
@@ -72,6 +73,13 @@ class AssetsImport{
 
 
 // functions
+
+async function asyncForEach(array, callback) {
+  for (let index = 0; index < array.length; index++) {
+    await callback(array[index], index, array);
+  }
+}
+
 async function importResource(path){
 		const response = await fetch(path);
 		let text = await response.text();
@@ -81,8 +89,8 @@ async function importResource(path){
 (function events(){ 
 
 	document.addEventListener('DOMContentLoaded', () =>{
-		new AssetsImport().assetsLoad();
-		new LangControl().startControl();
+		// new AssetsImport().assetsLoad();
+    new LangControl().startControl();
 	});
 	
 	

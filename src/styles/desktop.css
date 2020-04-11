@@ -1,0 +1,32 @@
+button{
+	font-size: 1.1em;
+}
+
+.content{
+  flex-direction: row;
+}
+
+.header{
+	background-size: contain;
+}
+
+.header__content{
+  padding-bottom: 8em;
+}
+
+.header__logo{
+  width: 30%;
+}
+
+.header__workflow{
+	width: 40%
+}
+
+.logo__distroname{
+	font-size: 2em;
+}
+
+.logo__slogan{
+	font-size: 1.3em;
+	margin: 0.2em;
+}
